@@ -15,7 +15,7 @@ return array(
                 'options' => array(
                     'route'    => '/',
                     'defaults' => array(
-                        'controller' => 'Application\Controller\Index',
+                        'controller' => 'Contato\Controller\Index',
                         'action'     => 'index',
                     ),
                 ),
@@ -27,9 +27,9 @@ return array(
             'application' => array(
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/application',
+                    'route'    => '/Contato',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Application\Controller',
+                        '__NAMESPACE__' => 'Contato\Controller',
                         'controller'    => 'Index',
                         'action'        => 'index',
                     ),
@@ -73,7 +73,7 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Contato\Controller\Index' => 'Contato\Controller\IndexController'
         ),
     ),
     'view_manager' => array(
@@ -84,7 +84,7 @@ return array(
         'exception_template'       => 'error/index',
         'template_map' => array(
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
+            'Contato/index/index' => __DIR__ . '/../view/Contato/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
         ),
